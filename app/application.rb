@@ -26,6 +26,7 @@ class Application
       search_term = req.params["q"]
       	if @@items.include?(search_term)
           @@items << search_term
+          resp.write "We added #{search_term}"
         else
         resp.write "We do not have that item"
         end
