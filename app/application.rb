@@ -27,7 +27,7 @@ class Application
       	if @@items.include?(search_term)
           	@@items << search_term
         	else
-        	resp.write "Couldn't find #{search_term}"
+        	resp.write "We do not have that item"
         	end
     else
       resp.write "Path Not Found"
