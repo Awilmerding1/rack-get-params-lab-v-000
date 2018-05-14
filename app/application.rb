@@ -15,6 +15,7 @@ class Application
       search_term = req.params["q"]
       resp.write handle_search(search_term)
     elsif req.path.match(/cart/)
+      esp.write "#{cart}\n"
     else
       resp.write "Path Not Found"
     end
