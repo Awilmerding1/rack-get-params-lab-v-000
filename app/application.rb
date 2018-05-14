@@ -28,7 +28,7 @@ class Application
           @@items << search_term
         else
         resp.write "We do not have that item"
-       end
+        end
     else
       resp.write "Path Not Found"
     end
